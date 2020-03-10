@@ -1,53 +1,150 @@
+/* base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
+  font-size: 1rem;
   font-family: 'Nunito', sans-serif;
 }
 
+body * {
+  box-sizing: border-box;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-align: center;
+
+}
+
+ul, p {
+  margin: 0;
+}
+
+p {
+  line-height: 1.5;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+
+}
 h1 {
-  text-align: center;
-  font-size: 200%;
+  
+  font-size: 3.5rem;
 }
-
+  
 h2 {
+  font-size: 2rem;
+}
+
+h3 { 
+  font-size: 1.5rem;
+}
+
+
+.button {
+ 
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: .5em;
+  width: 8em;
   text-align: center;
-  font-weight: 100;
-  font-size: 110%;
+  text-decoration: none;
+  /* display: inline-block; */
 }
 
-nav {
+
+/* Layout Styles */
+
+.hero__container {
+  margin-top: 2em;
+  margin-bottom: 2em;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  align-items: flex-end;
+}
+
+.hero__container__header {
+  padding-bottom: 1em;
+  
+}
+
+.hero__container__subheader {
+  padding-bottom: 2em;
+  width: 40%;
+}
+
+.lets-chat__form-row {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
-nav li {
-  display: inline-block;
-  margin-top: 0;
-  margin-right: 12px;
-  margin-left: 12px;
-  margin-bottom: 0;
+/* Block Styles  */
+
+
+.navbar__list {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.navbar__list-items {
+  list-style: none;
+  margin: 1em 1em 1em 1em;
+}
+
+.navbar__list-items__link {
   text-decoration: underline;
 }
 
-.blue-button {
-  background-color: blue;
-  text-decoration: none !important;
-  color: white;
-  padding: 0.5em;
-  border-radius: 6px;
-  width: 8em;
-  text-align: center;
-  display: inline-block;
-} 
+.navbar__list-items__tour-btn {
+  padding-right: 1em;
+  padding-left: 1em;
+}
 
-.signup-form form input[type=submit] {
-  border: none;
-  background-color: blue;
-  text-decoration: none !important;
-  color: white;
-  padding: 0.5em;
-  border-radius: 6px;
-  width: 8em;
+
+
+.hero__header {
+  text-align: center
+}
+
+.hero__subheader {
   text-align: center;
-  display: inline-block;
+}
+
+.hero__video {
+  width: 100%;
+  min-width: 34em;
+  min-height: 20em;
+}
+
+
+.submit-btn {
+  border: none;
+}
+
+.lets-chat {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.lets-chat__heading {
+  text-align: center;
+}
+
+.lets-chat__body {
+  text-align: center;
+
 }
