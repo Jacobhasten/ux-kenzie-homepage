@@ -81,13 +81,18 @@ h3 {
   width: 40%;
 }
 
-.lets-chat__form-row {
+/* .lets-chat__form-row {
   display: flex;
   justify-items: center;
   align-items: center;
   flex-direction: column;
 
-}
+} */
+
+/* .lets-chat__form-column {
+  display:flex;
+  justify-content: center;
+} */
 
 /* Block Styles  */
 
@@ -120,6 +125,8 @@ h3 {
 
 .hero__subheader {
   text-align: center;
+  max-width: 40em;
+  min-width: 10em;
 }
 
 .hero__video {
@@ -137,14 +144,33 @@ h3 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: fit-content;
 }
 
 .lets-chat__heading {
   text-align: center;
+  margin-bottom: .25em;
 }
 
 .lets-chat__body {
   text-align: center;
-
+  max-width: 30em;
+  margin-bottom: 2em;
 }
+
+ .lets-chat__form__input {
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+  margin-bottom: .5em;
+  margin-left: .5em;
+  border: 1px solid black;
+  
+}
+
+  .lets-chat__form-row__items {
+width: 100%;
+}
+
+.lets-chat__form-column {
+  width: 100%;
+} 
